@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+tmp/
+*.mp4
+*.pdf
+*.docx
+output/
+report/
+QUY_TRINH_NHAN_DIEN.md
