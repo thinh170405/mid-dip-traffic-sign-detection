@@ -44,8 +44,7 @@ Các ngưỡng chung nằm trong `detect_circular_signs.py`. Tăng bán kính t�
 ## Mã nguồn trong repository
 
 - `detect_circular_signs.py`: chương trình chính tạo hai video kết quả.
-- `detect_circles_only.py`: thử nghiệm riêng bước tìm hình tròn.
-- `explain_detection.py`: mã hỗ trợ giải thích các bước xử lý.
+- `README.md`: hướng dẫn cài đặt, chạy và giải thích phương pháp.
 
 ## Tình trạng và việc cần làm trước khi nộp
 
@@ -54,4 +53,4 @@ Các ngưỡng chung nằm trong `detect_circular_signs.py`. Tăng bán kính t�
 - Bản thử kiểm tra cấu trúc vành được đánh giá riêng trên các khung hình mẫu và video xem thử. Hai video đầy đủ `video1_TEST.mp4`, `video2_TEST.mp4` hiện thuộc bản trước khi thêm bước này. Các bản thử mới có hậu tố `_structure_preview_20s`; đoạn so sánh có tên `video1_compare_structure_56-70s.mp4`.
 - Sau đó bán kính tối thiểu được tăng từ 8,6 lên 14,4 px ở độ rộng 1920. Đoạn thử riêng cho thay đổi này: `video1_TEST_size_filter_60-70s.mp4`; các video thử cấu trúc trước đó vẫn dùng ngưỡng cũ.
 - Bản cải tiến ellipse và dự đoán chuyển động được xuất riêng thành `video1_TEST_improved.mp4`, `video2_TEST_improved.mp4`. Kiểm tra 59 khung hình cách nhau 3 giây trên hai video bổ sung 5 lần phát hiện; kiểm tra trực quan cả 5 là biển viền đỏ, nền xanh. Đây không phải 5 biển khác nhau và chưa phải phép đo precision/recall toàn video. Log mẫu: `output/improvement_sample_audit.json`; log toàn video: `output/video1_improved_diagnostics.json`, `output/video2_improved_diagnostics.json`.
-- Repository này chỉ chứa mã nguồn, README và `.gitignore`. Video nguồn, video kết quả, đề và báo cáo được giữ ngoài Git.
+- Repository này chỉ chứa `README.md` và `detect_circular_signs.py`. Video nguồn, video kết quả, đề và báo cáo được giữ ngoài Git.
